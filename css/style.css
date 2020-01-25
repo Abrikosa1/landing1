@@ -1,0 +1,144 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    margin: 0;
+}
+header{
+    background-image: url("../images/bg with grad.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    padding-top: 15px;
+}
+.container{
+    max-width: 940px;
+    margin: auto;
+}
+.site-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 155px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo-text{
+    margin-left: 11px;
+    font-size: 30px;
+    color: #36b3cd;
+    font-weight: 100;
+}
+.navbar{
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.navbar-item{
+    letter-spacing: 1px;
+    text-decoration: none;
+    margin-left: 30px;
+    color: #fff;
+}
+.active{
+    color: #00e0d0;
+}
+.navbar-item:active{
+    color: #00e0d0;
+}
+
+.site-content{
+    text-align: center;
+    padding-bottom: 195px;
+}
+.site-title{
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 800;
+    font-size: 32px;
+    word-spacing: 2px;
+}
+
+.tile-line{
+    margin-bottom: 25px;
+}
+.site-text{
+    margin: auto;
+    max-width: 780px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    word-spacing: 2px;
+    font-weight: 300;
+    margin-bottom: 45px;
+}
+
+.site-btn{
+    
+    font-family: 'HammersmithOne', sans-serif;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: normal;
+    border: 1px solid #00e0d0;
+    color: #00e0d0;
+    padding: 9px 13px;
+    display: inline-block;
+}
+
+/*main*/
+/*story*/
+.story{
+    background-color: #fff;
+    color: #413d4b;
+}
+.story{
+    margin-top: 82px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 70px;
+}
+.big-logo{
+    margin-left: 65px;
+}
+.story-block{
+    margin-left: 100px;
+}
+.story-title{
+    font-size: 22px;
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: bold;
+    margin: 0;
+    letter-spacing: 1px;
+    margin-bottom: 18px;
+}
+.story-text{
+    font-size: 14px;
+    line-height: 22px;
+    word-spacing: 2px;
+    margin: 0;
+    margin-bottom: 26px;
+}
+
+.story-video{
+    background-image: url("../images/video bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.video-block{
+    text-align: center;
+    padding: 200px 0;
+}
+.play-img{
+    margin-bottom: 26px;
+}
+.video-text{
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
