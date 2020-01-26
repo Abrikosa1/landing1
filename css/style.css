@@ -325,7 +325,7 @@ header{
     display: flex;
     justify-content: space-between;
     padding-top: 63px;
-    padding-bottom: 63px;
+    padding-bottom: 70px;
 }
 .contact-title{
     text-align: unset;
@@ -378,4 +378,135 @@ header{
     margin-bottom: 50px;
     max-width: 150px;*/
     text-align: center;
+}
+
+/*footer*/
+footer{
+    background-image: url("../images/footer.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.footer-main{
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 100%;
+    align-items: flex-start;
+    margin-bottom: 47px;
+}
+.footer-about{
+    max-width: 290px;
+    flex-basis: 33.33%;
+}
+.footer-address{
+    max-width: 290px;
+    flex-basis: 33.33%;
+}
+.footer-social{
+    max-width: 290px;
+    flex-basis: 33.33%;
+}
+.about-text{
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+    word-spacing: 0.7px;
+    margin: 0;
+    margin-top: 20px;
+}
+
+.footer-title{
+    font-size: 15px;
+    text-transform: uppercase;
+    line-height: 26px;
+    margin-top: 15px;
+    font-weight: 800;
+    letter-spacing: 0.7px;
+    margin-bottom: 25px;
+}
+.address-text{
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+    word-spacing: 1px;
+    margin: 0;
+}
+.phone-text{
+    text-decoration: none;
+    color: #eaeaec;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+    word-spacing: 0.7px;
+    margin: 0;
+}
+.address-item{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 13px;
+}
+.address-img{
+    margin-right: 15px;
+}
+.social-input{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+}
+.subscribe-input{
+    background:none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #9e97af;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 26px;
+    padding: 9px 20px;
+    margin-bottom: 21px;
+    letter-spacing: 0.6px;
+}
+.subscribe-input:active{
+    border: none;
+    background:none;
+    text-decoration: none;
+    
+}
+.subscribe-btn{
+    border: none;
+    background:none;
+    text-decoration: none;
+    background-color: #a19ab3;
+    opacity: .3;
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/paper122.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 45px;
+    width: 70px;
+}
+
+.footer-links{
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.4px;
+    display: block;
+    float: left;
+}
+.footer-link{
+    text-decoration: none;
+    color: #eaeaec;
+    margin-right: 30px;
+}
+.copyright{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.5px;
+    display: block;
+    float: right;
 }
