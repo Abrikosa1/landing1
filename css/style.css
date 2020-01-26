@@ -25,6 +25,7 @@ header{
     font-weight: bold;
     margin: 0;
     letter-spacing: 1px;
+    text-align: center;
 }
 
 
@@ -148,7 +149,7 @@ header{
     letter-spacing: 1px;
 }
 
-/*expertise*/
+/*main-expertise*/
 .expertise{
     padding-top: 63px;
     padding-bottom: 70px;
@@ -213,4 +214,47 @@ header{
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
+}
+/*main-team*/
+.team{
+    background-image: url("../images/team_bg.png");
+}
+.team-section-title{
+    margin-bottom: 8px;
+    padding-top: 63px;
+}
+.team-title-line{
+    margin-bottom: 43px;
+}
+.team-desc{
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 18px;
+}
+.team-block{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.team-card{
+    border: 1px solid #77768a;
+}
+.team-img{
+    margin-bottom: 16px;
+}
+.team-title{
+    margin: 0;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.team-text{
+    font-size: 13px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 20px;
 }
