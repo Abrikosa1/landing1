@@ -295,3 +295,17 @@ header{
 .works-btn{
     text-align: center;
 }
+.works-block{
+    display: flex;
+    flex-wrap: wrap;
+}
+.works-item{  
+    width: 16.66666666666667%;  
+    flex-basis: 16,66666666666667%;
+    border: 1px solid gray;
+}
+.works-btn{
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
