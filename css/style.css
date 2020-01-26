@@ -351,6 +351,31 @@ header{
     text-align: center;
     width: 120px;
 }
+
 .clients{
+    max-width: 380px;
     flex-basis: 50%;
+}
+.client-title{
+    text-align: unset;
+    margin-bottom: 30px;
+}
+.clients-block{
+    /*
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px 80px;
+    justify-items: center;
+}
+.client-img{
+    /*
+    flex-basis: 50%;
+    margin-bottom: 50px;
+    max-width: 150px;*/
+    text-align: center;
 }
