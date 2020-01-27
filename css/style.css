@@ -314,10 +314,45 @@ header{
 .feedback{
     background-image: url("../images/feedback_bg.png");
     background-repeat: no-repeat;
-    padding-top: 70px;
+    padding-top: 35px;
     padding-bottom: 70px;
+    text-align: center;
 }
-
+.feedback-block{
+    display: inline-block;
+    max-width: 780px;
+}
+.quote{
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 100px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    margin-bottom: -35px;
+}
+.feedback-text{
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.45px;
+    margin: 0;
+    margin-bottom: 40px;
+}
+.author{
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 22px;
+    letter-spacing: .7px;
+    margin-bottom: 0px;
+}
+.author-job{
+    font-size: 13px;
+    line-height: 22px;
+    font-weight: 300;
+    margin: 0;
+}
 
 /*main-contact*/
 .contact{
@@ -464,15 +499,10 @@ footer{
     font-weight: 300;
     line-height: 26px;
     padding: 9px 20px;
-    margin-bottom: 21px;
+    margin-bottom: 25px;
     letter-spacing: 0.6px;
 }
-.subscribe-input:active{
-    border: none;
-    background:none;
-    text-decoration: none;
-    
-}
+
 .subscribe-btn{
     border: none;
     background:none;
@@ -487,7 +517,9 @@ footer{
     height: 45px;
     width: 70px;
 }
-
+.social-item{
+    margin-right: 5px;
+}
 .footer-links{
     font-size: 14px;
     text-transform: uppercase;
