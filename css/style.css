@@ -20,6 +20,7 @@ header {
 .container {
     max-width: 940px;
     margin: auto;
+    width: 90%;
 }
 
 .title {
@@ -130,6 +131,7 @@ header {
 
 .big-logo {
     margin-left: 65px;
+    max-width: 235px;
 }
 
 .story-block {
@@ -137,6 +139,7 @@ header {
 }
 
 .story-title {
+    text-align: left;
     margin-bottom: 18px;
 }
 
@@ -252,6 +255,8 @@ header {
 .team {
     background-image: url("../images/team_bg.png");
     padding-bottom: 70px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .team-section-title {
@@ -344,14 +349,22 @@ header {
 }
 
 .works-block {
+    
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .works-item {
-    width: 16.66666666666667%;
-    flex-basis: 16, 66666666666667%;
+    /* width: 16.66666666666667%; 
+    flex-basis: 16,66666666666667%;*/
+    flex-grow: 1;
+    flex-basis: 0;
     border: 1px solid gray;
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    
 }
 
 .works-btn {
@@ -459,9 +472,7 @@ header {
     color: #9f9f9f !important;
 }
 .swiper-button-next:after , .swiper-button-prev:after {
-    
     font-size: 20px !important;
-
 }
 
 /*main-contact*/
@@ -521,7 +532,8 @@ header {
     justify-content: space-between;*/
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 50px 80px;
+    grid-row-gap: 50px;
+    grid-column-gap: 80px;
     justify-items: center;
 }
 
@@ -614,7 +626,6 @@ footer {
 
 .social-input {
     display: flex;
-    justify-content: space-between;
     justify-items: center;
 }
 
@@ -623,6 +634,7 @@ footer {
     border: none;
     margin: 0;
     padding: 0;
+    margin-right: 5px;
     border: 1px solid #9e97af;
     font-size: 14px;
     font-weight: 300;
@@ -708,4 +720,157 @@ footer {
 
 .gallery-thumbs .swiper-slide-thumb-active {
     opacity: 1;
+}
+
+
+/*media*/
+@media (max-width: 1020px){
+    .team-block{
+        justify-content: center;
+        align-items: center;
+    }
+    .team-item{
+        display: flex;
+        flex-basis: 50%;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .clients-block {
+        grid-column-gap: 40px;
+    }
+    .big-logo{
+        flex-basis: 40%;
+        margin-left: 0;
+    }
+    .story-block{
+        flex-basis: 60%;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 900px){
+    .site-header{
+        margin-bottom: 100px;
+    }
+    .site-content{
+        padding-bottom: 140px;
+    }
+    .navbar-item {
+        margin-left: 15px;
+    }
+    .clients-block {
+        grid-column-gap: 20px;
+    }
+    .contact{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-form{
+        width: 70%;
+        order: 1;
+    }
+    .contact-title{
+        text-align: center;
+    }
+    .clients-block {
+        grid-row-gap: 25px;
+    }
+    .clients{
+        max-width: 70%;
+        width: 70%;
+        margin-bottom: 60px;
+    }
+    .client-title{
+        text-align: center;
+    }
+
+
+    .footer-main{
+        flex-wrap: wrap;
+    }
+    .footer-about{
+        flex-basis: 47%;
+        max-width: 47%;
+    }
+    .footer-address{
+        flex-basis: 47%;
+        max-width: 47%;
+    }
+    .footer-social{
+        flex-basis: 47%;
+        max-width: 47%;
+    }
+}
+
+@media (max-width: 835px){
+    .title{
+        font-size: 20px;
+    }
+    .navbar{
+        font-size: 12px;
+    }
+    .site-title{
+        font-size: 28px;
+    }
+    .site-text{
+        font-size: 13px;
+    }
+    .story-text{
+        font-size: 13px;
+    }
+    .features-item{
+        flex-basis: 50%;
+    }
+    .features-item:first-child {
+        border-bottom: 1px solid #ebebeb;
+    }
+    
+    .features-item:nth-child(2) {
+        border-bottom: 1px solid #ebebeb;
+        border-left: 1px solid #ebebeb;
+        border-right: none;
+    }
+    .features-item:nth-child(3) {
+        border-bottom: 1px solid #ebebeb;
+        border-right: 1px solid #ebebeb;
+    }
+    .features-item:nth-child(4) {
+        border-bottom: 1px solid #ebebeb;
+    }
+    
+    .features-item:nth-child(5) {
+        border-left:  none;
+        border-right: 1px solid #ebebeb;
+    }
+
+    .swiper-button-prev{
+        left: 50px !important;
+    }
+    .swiper-button-next{
+        right: 50px !important;
+    }
+ 
+    .big-logo{
+        flex-basis: 0;
+        width: 200px;
+    }
+
+
+    .video-block{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .quote{
+        font-size: 90px;
+    }
+    .feedback-text{
+        font-size: 14px;
+    }
+    .author{
+        font-size: 13px;
+    }
+    .author-job{
+        font-size: 12px;
+    }
 }
