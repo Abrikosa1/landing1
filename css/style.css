@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    background-image: url("../images/bg with grad.png");
+    background-image: url("../images/bg_with_grad.webp");
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
@@ -152,7 +152,7 @@ header {
 }
 
 .story-video {
-    background-image: url("../images/video bg.png");
+    background-image: url("../images/video_bg.webp");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -253,7 +253,7 @@ header {
 
 /*main-team*/
 .team {
-    background-image: url("../images/team_bg.png");
+    background-image: url("../images/team_bg.webp");
     padding-bottom: 70px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -378,7 +378,7 @@ header {
 
 /*main-feedback*/
 .feedback {
-    background-image: url("../images/feedback_bg.png");
+    background-image: url("../images/feedback_bg.webp");
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 35px;
@@ -552,7 +552,7 @@ header {
 
 /*footer*/
 footer {
-    background-image: url("../images/footer.png");
+    background-image: url("../images/footer.webp");
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 70px;
