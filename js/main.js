@@ -51,15 +51,43 @@ var mySwiper = new Swiper('.slider-text', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-  pagination: {
+   pagination: {
     el: '.swiper-pagination',
     clickable: true,
-    dynamicBullets: 5,
-    hideOnClick: false,
+    dynamicBullets: true,
     renderBullet: function (index, className) {
       return '<img src="images/clients/avatar/' + (index + 1) + '.png" class="' + className + '">' + (index + 1) + '</img>';
     },
 
-  },
+  }, 
+ 
+/*   breakpoints: {
+    // when window width is >= 320px
+    735: {
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        dynamicBullets: 5,
+        hideOnClick: false,
+        renderBullet: function (index, className) {
+          return '<img src="images/clients/avatar/' + (index + 1) + '.png" class="' + className + '">' + (index + 1) + '</img>';
+        },
+
+      }
+    },
+    320: {
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        dynamicBullets: 1,
+        dynamicMainBullets: 1,
+        hideOnClick: false,
+        renderBullet: function (index, className) {
+          return '<img src="images/clients/avatar/' + (index + 1) + '.png" class="' + className + '">' + (index + 1) + '</img>';
+        },
+
+      }
+    },
+  } */
 
 });
