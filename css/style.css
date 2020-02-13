@@ -66,8 +66,14 @@ header {
     text-decoration: none;
     margin-left: 30px;
     color: #fff;
+    transition: 0.2s ease-in;
 }
-
+.navbar-item:hover{
+    color: #36b3cd;
+}
+.menu-button{
+    display: none;
+}
 .active {
     color: #00e0d0;
 }
@@ -230,8 +236,11 @@ header {
     padding-top: 40px;
     flex-basis: 33.33%;
     text-align: center;
+    transition: 0.2s ease-in;
 }
-
+.features-item:hover{
+    background-color: #f5f9fa;
+}
 .features-item:first-child {
     border-bottom: 1px solid #ebebeb;
 }
@@ -367,6 +376,10 @@ header {
     background-position: center right;
     padding-right: 20px;
     color: #413d4b;
+    transition: 0.2s ease-in;
+}
+.works-link:hover{
+    transform: translate(10px);
 }
 
 .works-btn {
@@ -690,6 +703,12 @@ footer {
 .social-item {
     margin-right: 5px;
 }
+.social-img{
+    transition: 0.5s ease-in;
+}
+.social-img:hover{
+    transform: rotateZ(360deg);
+}
 
 .footer-links {
     font-size: 14px;
@@ -705,8 +724,11 @@ footer {
     text-decoration: none;
     color: #eaeaec;
     margin-right: 30px;
+    transition: 0.2s ease-in;
 }
-
+.footer-link:hover{
+    color: #36b3cd;
+}
 .copyright {
     font-size: 14px;
     font-weight: 400;
@@ -933,10 +955,6 @@ footer {
     .navbar-item:first-child{
         margin-left: 0;
     }
-    .logo{
-        margin-bottom: 20px;
-    }
-
     .big-logo{
         width: 150px;
     }
@@ -1009,19 +1027,115 @@ footer {
 
 @media (max-width: 570px){
     .site-header{
-        margin-bottom: 40px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .menu-button{
+        display: block;
+        width: 30px;
+        height: 2px;
+        background-color: #fff;
+        border: none;
+        cursor: pointer;
+        position: relative;
+    }
+    .menu-button:before{
+        content: '';
+        display: block;
+        position: absolute;
+        width: 30px;
+        height: 2px;
+        background-color: #fff;
+        margin-top: -7px; 
+        transition: transform 0.2s;
+    }
+    .menu-button:after{
+        content: '';
+        display: block;
+        position: absolute;
+        width: 30px;
+        height: 2px;
+        background-color: #fff;
+        margin-top: 7px;
+        transition: transform 0.2s;
+    }
+/*     .menu-button{
+        display: block;
+        position: absolute;
+        right: 35px;
+        top: 40px;
+        width: 30px;
+        height: 2px;
+        background-color: #fff;
+        border: none;
+        cursor: pointer;
+    } */
+   /*  .menu-button:before{
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 30px;
+        height: 2px;
+        background-color: #fff;
+        margin-top: -7px;
+        transition: transform 0.2s;
+    }
+    .menu-button:after{
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 30px;
+        height: 2px;
+        background-color: #fff;
+        margin-top: 7px;
+        transition: transform 0.2s;
+    } */
+    .menu-button-active{
+        transform: translateY(7px);
+        transform-origin: 0%;
+    }
+    .menu-button-active:before{
+        transform: rotate(60deg);
+        margin: 0;
+        margin-top: -13px;
+        margin-left: 7px;
+    }
+    .menu-button-active:after{
+        transform: rotate(-60deg);
+        margin: 0;
+        margin-top: -13px;
+        margin-left: -7px;
     }
     .navbar{
+        display: none;
+    }
+    .navbar-active{
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-        font-size: 14px;
+        position: absolute;
+        right: 0;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        /* background: #52c3c0; */
+        background-image: url("../images/bg_with_grad.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-bottom: 10px;
+        padding-top: 20px;
+        z-index: 10000;
     }
     .navbar-item{
+        font-size: 16px;
         margin: 0;
         margin-bottom: 10px;
     }
+
     .expertise-desc{
         font-size: 13px;
     }

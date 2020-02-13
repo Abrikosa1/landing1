@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tajam</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/animate.css">
 </head>
@@ -27,6 +28,7 @@
                     <a href="#people-say" class="navbar-item">People Say</a>
                     <a href="#contact" class="navbar-item">Contact</a>
                 </nav>
+                <div class="menu-button"></div>
             </div>
             <!-- /.site-header -->
             <div class="site-content">
@@ -69,7 +71,9 @@
         <div class="story-video">
             <div class="container">
                 <div class="video-block wow zoomIn" data-wow-delay="0.5s" data-wow-duration="1s">
-                    <img src="images/play.png" alt="Play Video" class="play-img">
+                    <a data-fancybox href="https://www.youtube.com/watch?v=rahRaVtEQaM&feature=emb_logo">
+                        <img src="images/play.png" alt="Play Video" class="play-img">
+                    </a>
                     <div class="video-text">WATCH OUR STORY</div>
                 </div>
             </div>
@@ -360,12 +364,12 @@
                             <button class="subscribe-btn"></button>
                         </div>
                         <div class="socilal-links">
-                            <a href="#" class="social-item"><img src="images/social/facebook.png" alt="Facebook"></a>
-                            <a href="#" class="social-item"><img src="images/social/twitter.png" alt="Twitter"></a>
-                            <a href="#" class="social-item"><img src="images/social/dribbble.png" alt="Dribble"></a>
-                            <a href="#" class="social-item"><img src="images/social/instagram.png" alt="Instagram"></a>
-                            <a href="#" class="social-item"><img src="images/social/gplus.png" alt="G+"></a>
-                            <a href="#" class="social-item"><img src="images/social/youtube.png" alt="YouTube"></a>
+                            <a href="#" class="social-item"><img src="images/social/facebook.png" alt="Facebook" class="social-img"></a>
+                            <a href="#" class="social-item"><img src="images/social/twitter.png" alt="Twitter" class="social-img"></a>
+                            <a href="#" class="social-item"><img src="images/social/dribbble.png" alt="Dribble" class="social-img"></a>
+                            <a href="#" class="social-item"><img src="images/social/instagram.png" alt="Instagram" class="social-img"></a>
+                            <a href="#" class="social-item"><img src="images/social/gplus.png" alt="G+" class="social-img"></a>
+                            <a href="#" class="social-item"><img src="images/social/youtube.png" alt="YouTube" class="social-img"></a>
                         </div>
                     </div>
                     <!-- /.footer-social -->
@@ -377,13 +381,15 @@
                     <a href="#" class="footer-link">PRIVACY</a>
                 </div>
                 <div class="copyright wow fadeInUp" data-wow-delay="0.2s">
-                    Copyright © 2015 - Tajem Creative
+                    Copyright © 2015 - Tajam Creative
                 </div>
             </section>
             <!-- /.footer -->
         </div>
         <!-- /.container -->
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/swiper.min.js"></script>
     <script src="js/main.js"></script>

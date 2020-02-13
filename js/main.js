@@ -27,3 +27,10 @@ var mySwiper = new Swiper('.slider-text', {
 
   }, 
 });
+
+var menuButton = document.querySelector('.menu-button');
+var menu = document.querySelector('.navbar');
+menuButton.addEventListener('click', function(){
+  menuButton.classList.toggle('menu-button-active');
+  menu.classList.toggle('navbar-active');
+})
