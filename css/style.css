@@ -25,6 +25,29 @@ header {
     width: 90%;
 }
 
+.back-to-top{
+    position: fixed;
+    bottom: 80px;
+    right: 40px;
+    z-index: 9999;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background: #f5f5f5;
+    color: #444;
+    cursor: pointer;
+    border-radius: 2px;
+    display: none;
+}
+  
+.back-to-top:hover {
+    background: #e9ebec;
+}
+  
+.back-to-top-show{
+    display: block;
+}
 .title {
     text-transform: uppercase;
     font-size: 22px;
@@ -134,7 +157,11 @@ header {
 	transition: all 1.5s ease;
 }
 .site-btn:hover:before {
-	width: 100%;
+    width: 100%;
+}
+.white-bg-btn{
+    cursor: pointer;
+    background-color: #fff;
 }
 .white-bg-btn:before{
     /* background: #9b0000; */
@@ -382,9 +409,6 @@ header {
     transform: translate(10px);
 }
 
-.works-btn {
-    text-align: center;
-}
 .work-img{
     width: 30%;
 }
@@ -408,11 +432,42 @@ header {
     border-color: #00e0d0;
 }
 .works-btn {
+    position: relative;
     text-align: center;
     margin-top: 70px;
     margin-bottom: 70px;
 }
-
+.popuptext {
+    visibility: hidden;
+    width: 160px;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+    color: #fff;
+    background-color: #0d0121;
+}
+.popuptext::after {
+    font-size: 14px;
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #0d0121 transparent transparent transparent;
+}
+.show {
+    visibility: visible;
+}
+.hide{
+    visibility: hidden;
+}
 
 /*work images*/
 .columns {
@@ -432,11 +487,17 @@ header {
 	padding: 15px;
 	padding-bottom: 10px;
 	transition: opacity .4s ease-in-out;
-  display: inline-block;
+ /*  display: inline-block; */
+ display: none;
   column-break-inside: avoid;
     position: relative;
 }
-
+.work-figure-active{
+    display: inline-block;
+}
+.work-figure-inactive{
+    display: none;
+}
 .work-link{
     position: absolute;
     left: 0;
@@ -1012,7 +1073,7 @@ footer {
 
     .site-header{
         flex-direction: column;
-        margin-bottom: 70px;
+        margin-bottom: 90px;
     }
     .navbar-item:first-child{
         margin-left: 0;
@@ -1312,3 +1373,4 @@ footer {
         margin: 0;
     }
 }
+

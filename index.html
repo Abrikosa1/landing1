@@ -205,41 +205,83 @@
                 <!-- <img src="images/1.jpg" alt="" class="work-img"> -->
 
                 <div class="columns">
-                    <figure class="work-figure">
+                    <figure class="work-figure work-figure-active">
                         <img src="images/1.jpg" alt="" class="work-img">
                         <a href="#" class="work-link">
                             <figcaption>The Greatest Mobile App</figcaption>
                         </a>
                     </figure>
                       
-                    <figure class="work-figure">
+                    <figure class="work-figure work-figure-active">
                         <img src="images/2.jpg">
                         <a href="#" class="work-link">
                             <figcaption>Waxom Landing</figcaption>
                         </a>
                     </figure>
-                    <figure class="work-figure">
+                    <figure class="work-figure work-figure-active">
                         <img src="images/1.jpg" alt="" class="work-img">
                         <a href="#" class="work-link">
                             <figcaption>The Greatest Mobile App</figcaption>
                         </a>
                     </figure>
                       
-                    <figure class="work-figure">
+                    <figure class="work-figure work-figure-active">
                         <img src="images/2.jpg">
                         <a href="#" class="work-link">
                             <figcaption>Waxom Landing</figcaption>
                         </a>
                     </figure>
 
-                    <figure class="work-figure">
+                    <figure class="work-figure work-figure-active">
                         <img src="images/1.jpg" alt="" class="work-img">
                         <a href="#" class="work-link">
                             <figcaption>The Greatest Mobile App</figcaption>
                         </a>
                     </figure>
                       
-                    <figure class="work-figure">
+                    <figure class="work-figure work-figure-active">
+                        <img src="images/2.jpg" alt="" class="work-img">
+                        <a href="#" class="work-link">
+                            <figcaption>Waxom Landing</figcaption>
+                        </a>
+                    </figure>
+
+                    <figure class="work-figure work-figure-inactive">
+                        <img src="images/1.jpg" alt="" class="work-img">
+                        <a href="#" class="work-link">
+                            <figcaption>The Greatest Mobile App</figcaption>
+                        </a>
+                    </figure>
+                      
+                    <figure class="work-figure work-figure-inactive">
+                        <img src="images/2.jpg" alt="" class="work-img">
+                        <a href="#" class="work-link">
+                            <figcaption>Waxom Landing</figcaption>
+                        </a>
+                    </figure>
+
+                    <figure class="work-figure work-figure-inactive">
+                        <img src="images/1.jpg" alt="" class="work-img">
+                        <a href="#" class="work-link">
+                            <figcaption>The Greatest Mobile App</figcaption>
+                        </a>
+                    </figure>
+                      
+                    <figure class="work-figure work-figure-inactive">
+                        <img src="images/2.jpg" alt="" class="work-img">
+                        <a href="#" class="work-link">
+                            <figcaption>Waxom Landing</figcaption>
+                        </a>
+                    </figure>
+                    
+                    <figure class="work-figure work-figure-inactive">
+                        <img src="images/1.jpg" alt="" class="work-img">
+                        <a href="#" class="work-link">
+                            <figcaption>The Greatest Mobile App</figcaption>
+                        </a>
+                    </figure>
+                      
+                    <figure class="work-figure work-figure-inactive">
                         <img src="images/2.jpg" alt="" class="work-img">
                         <a href="#" class="work-link">
                             <figcaption>Waxom Landing</figcaption>
@@ -249,7 +291,8 @@
             </div>
             <!-- /.works-block -->
             <div class="container works-btn">
-                <a href="#" class="site-btn white-bg-btn wow fadeInUp" data-wow-delay="0.2s">Load More</a>
+                <button onclick="loadMore()" class="site-btn white-bg-btn wow fadeInUp" data-wow-delay="0.2s">Load More</button>
+                <span class="popuptext" id="myPopup">Nothing more :c</span>
             </div>
             <!-- /.container -->
         </section>
@@ -432,6 +475,9 @@
         </div>
         <!-- /.container -->
     </footer>
+    <a class="back-to-top" title="Up">&uarr;</a>
+    <!-- /.back-to-top -->
+
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/wow.min.js"></script>
